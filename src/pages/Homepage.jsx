@@ -155,8 +155,8 @@ export default function Homepage() {
             </h1>
 
             <p className="text-zinc-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-              Full Stack Engineer crafting immersive digital experiences with React,
-              Spring Boot and modern system architecture. Focused on solving problems along and building scalable solutions.
+              Full Stack Software Engineer crafting immersive digital experiences with React,
+              Spring Boot and modern system architecture. Focused on solving real-world problems and building scalable solutions.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
