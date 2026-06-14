@@ -2,6 +2,7 @@ export interface Project {
   title: string;
   desc: string;
   tech: string[];
+  link: string;
 }
 
 export interface Contact {

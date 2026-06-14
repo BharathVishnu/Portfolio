@@ -1,18 +1,7 @@
-[
-  "React.js",
-  "Spring Boot",
-  "FastAPI",
-  "Java",
-  "Python",
-  "Next.js",
-  "Node.js",
-  "PostgreSQL",
-  "MongoDB",
-  "Express.js",
-  "Redis",
-  "Docker",
-  "TensorFlow",
-  "Kuberentes",
-  "Prompt Engineering",
-  "Firebase"
-]
+{
+  "name": "Bharath Vishnu",
+  "email": "bharathvb1204@gmail.com",
+  "github": "https://github.com/BharathVishnu",
+  "linkedin": "https://linkedin.com/in/b-bharath-vishnu",
+  "role": "System Engineer @ TCS"
+}
