@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Distributed Log Ingestion & Detection System",
+    "desc": "High-throughput distributed logging platform with anomaly detection, analytics, Spring Boot backend and React dashboard.",
+    "tech": ["Spring Boot", "PostgreSQL", "React", "Python"]
+  },
+  {
+    "title": "Inventory Management System",
+    "desc": "Enterprise inventory system with Redis caching, validation, analytics and Dockerized deployment.",
+    "tech": ["Java", "Redis", "Docker", "React"]
+  },
+  {
+    "title": "Task Queue System",
+    "desc": "Asynchronous task processing engine using Node.js and Redis with scalable worker architecture.",
+    "tech": ["Node.js", "Redis", "React"]
+  },
+  {
+    "title": "Underwater Image Enhancement GAN",
+    "desc": "GAN-based underwater enhancement model improving clarity and image restoration accuracy.",
+    "tech": ["TensorFlow", "Python", "GAN"]
+  }
+]
