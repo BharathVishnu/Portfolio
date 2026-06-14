@@ -3,14 +3,14 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Bharath Vishnu | Portfolio",
-  description: "SWE",
+  description: "Full Stack Software Engineer Portfolio",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body>{children}</body>
