@@ -12,7 +12,9 @@ import {
   Database,
 } from "lucide-react";
 
-import type { Project, Contact } from "@/types/portfolio.ts";
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
+import type { Project, Contact } from "@/types/portfolio";
 import CustomCursor from "./CustomCursor";
 import ParticleBackground from "./ParticleBackground";
 import FloatingGradient from "./FloatingGradient";
@@ -57,12 +59,6 @@ export default function Homepage({ projects, skills, contact }: HomepageProps) {
               <span className="block text-cyan-400">Vishnu</span>
             </h1>
 
-            <p className="text-zinc-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-              Full Stack Software Engineer crafting immersive digital
-              experiences with React, Next.js, Spring Boot, Node.js, FastAPI and
-              scalable backend architecture.
-            </p>
-
             <div className="flex flex-wrap gap-4 pt-4">
               <motion.a
                 whileHover={{ scale: 1.05 }}
@@ -73,25 +69,51 @@ export default function Homepage({ projects, skills, contact }: HomepageProps) {
                 View Projects <ArrowRight size={18} />
               </motion.a>
 
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href={`mailto:${contact.email}`}
-                className="px-7 py-4 rounded-2xl border border-zinc-700 bg-zinc-900/50 backdrop-blur-xl flex items-center gap-2"
-              >
-                Contact Me <Mail size={18} />
-              </motion.a>
 
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/Bharath_Vishnu_Resume.pdf"
+                href="/BBharathVishnu.pdf"
                 className="px-7 py-4 rounded-2xl border border-zinc-700 bg-zinc-900/50 backdrop-blur-xl flex items-center gap-2"
               >
                 Resume <Download size={18} />
               </motion.a>
+              <div className="flex items-center gap-5 pt-4 flex-wrap">
+            <motion.a
+                whileHover={{ y: -5 }}
+                href={contact.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-2xl border border-zinc-800 bg-zinc-900/50 flex items-center gap-2 hover:border-cyan-400 transition-all"
+            >
+                <FaGithub size={18} />
+                GitHub
+            </motion.a>
+
+                <motion.a
+                    whileHover={{ y: -5 }}
+                    href={contact.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-4 rounded-2xl border border-zinc-800 bg-zinc-900/50 flex items-center gap-2 hover:border-cyan-400 transition-all"
+                >
+                    <FaLinkedin size={18} />
+                    LinkedIn
+                </motion.a>
+
+                <motion.a
+                    whileHover={{ y: -5 }}
+                    href={`mailto:${contact.email}`}
+                    className="p-4 rounded-2xl border border-zinc-800 bg-zinc-900/50 flex items-center gap-2 hover:border-cyan-400 transition-all"
+                >
+                    <Mail size={18} />
+                    Email
+                </motion.a>
+                </div>
             </div>
           </motion.div>
+
+
 
           <motion.div
             initial={{ opacity: 0, scale: 0.85 }}
@@ -152,21 +174,16 @@ export default function Homepage({ projects, skills, contact }: HomepageProps) {
           viewport={{ once: true }}
           className="max-w-5xl mx-auto border border-zinc-800 rounded-[40px] p-10 md:p-16 bg-zinc-900/40 backdrop-blur-2xl"
         >
-          <p className="text-zinc-300 text-lg md:text-2xl leading-relaxed">
-            I am a passionate full stack engineer currently working at Tata
-            Consultancy Services. I build modern frontend interfaces with
-            React.js and Next.js, and scalable backend systems using Spring Boot,
-            FastAPI and Node.js. I enjoy combining clean engineering with
-            premium visual design.
-          </p>
-        </motion.div>
+          <p className="text-zinc-300 text-lg text-center md:text-2xl leading-relaxed">
+            B.Tech CSE 2025 Graduate</p>
+          <p className="text-zinc-300 text-lg text-center md:text-2xl leading-relaxed">
+            Building scalable software solutions—from modern user interfaces to resilient backend systems—for real-world business challenges.</p>        </motion.div>
       </section>
 
       <section className="relative z-10 px-6 md:px-20 py-32">
         <SectionTitle
           title="Skills"
-          subtitle="Technologies and tools I use to build scalable and immersive products."
-        />
+          subtitle=""/>
 
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-5">
           {skills.map((skill, index) => (
@@ -188,7 +205,7 @@ export default function Homepage({ projects, skills, contact }: HomepageProps) {
       <section id="projects" className="relative z-10 px-6 md:px-20 py-32">
         <SectionTitle
           title="Featured Projects"
-          subtitle="A collection of scalable systems and immersive interfaces crafted with modern technologies."
+          subtitle=""        
         />
 
         <div className="grid lg:grid-cols-2 gap-10 max-w-7xl mx-auto">
@@ -254,8 +271,7 @@ export default function Homepage({ projects, skills, contact }: HomepageProps) {
       <section className="relative z-10 px-6 md:px-20 py-32">
         <SectionTitle
           title="Experience"
-          subtitle="Professional experience building scalable enterprise systems."
-        />
+          subtitle=""/>
 
         <div className="max-w-5xl mx-auto">
           <motion.div
@@ -269,7 +285,7 @@ export default function Homepage({ projects, skills, contact }: HomepageProps) {
                 <h3 className="text-3xl font-bold">
                   Tata Consultancy Services
                 </h3>
-                <p className="text-cyan-400 text-lg">System Engineer</p>
+                <p className="text-cyan-400 text-lg uppercase">System Engineer</p>
               </div>
 
               <span className="text-zinc-500">2025 - Present</span>
@@ -277,15 +293,14 @@ export default function Homepage({ projects, skills, contact }: HomepageProps) {
 
             <ul className="space-y-5 text-zinc-400 text-lg leading-relaxed">
               <li>
-                • Developed reusable React.js frontend components for enterprise
-                applications.
+                • Developed reusable React.js components and integrated them with backend APIs thus handling asynchronous data rendering.
               </li>
               <li>
-                • Built high-throughput backend services and REST APIs.
+                • Implemented REStful API endpoints for backend services using SpringBoot and FastAPI
               </li>
               <li>
                 • Designed scalable ingestion and classification systems for
-                enterprise workflows.
+                enterprise Agentic AI automation workflows.
               </li>
             </ul>
           </motion.div>
@@ -303,12 +318,6 @@ export default function Homepage({ projects, skills, contact }: HomepageProps) {
             Let's Build
             <span className="block text-cyan-400">Something Great</span>
           </h2>
-
-          <p className="text-zinc-400 text-xl max-w-2xl mx-auto mb-10">
-            Open to building modern full stack applications, immersive frontend
-            experiences and scalable backend systems.
-          </p>
-
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
